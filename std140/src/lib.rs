@@ -172,7 +172,7 @@ pub struct array<T, const LEN: usize>
 where
     T: Std140ArrayElement,
 {
-    internal: [ArrayElementWrapper<T>; LEN],
+    pub internal: [ArrayElementWrapper<T>; LEN],
 }
 
 impl<T, const LEN: usize> array<T, { LEN }>
